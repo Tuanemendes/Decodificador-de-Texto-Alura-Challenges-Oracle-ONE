@@ -1,0 +1,14 @@
+.container-header {
+    position: absolute;
+    left: 4.27%;
+    right: 87.2%;
+    top: 25%;
+    bottom: 25%;
+
+
+}
+
+.c-card__text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
