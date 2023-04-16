@@ -10,32 +10,34 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
     <title>Decodificador</title>
 </head>
 
-<body>
+<body class="c-card__body">
 
     <header class="c-header__image">
         <img src="/img/Header.png" alt="alura">
     </header>
     <section>
         <div class="c-card">
-            <h2 class="c-card__text">Digite seu texto</h2>
+            <input class="c-card__input-text" type="text" placeholder="Digite seu texto">
+        </div>
+        <div>
+            <p class="c-card__wait">Apenas letras minúsculas e sem acento.</p>
         </div>
         <div class="c-buttons">
             <button class="c-buttons__encrypt">Criptografar</button>
             <button class="c-buttons__decrypt">Decriptografar</button>
         </div>
+        <div class="c-card__mensage">
+            <span class="c-card__mensagem-text1">Nenhuma mensagem encontrada</span>
+            <span class="c-card__mensagem-text2">Digite um texto que você deseja criptografar ou
+                descriptografar.</span>
+        </div>
     </section>
-    <footer class="container-footer">
-
-        @Tuane Mendes
-
-    </footer>
-
 
     <script
         type='text/javascript'>document.addEventListener('DOMContentLoaded', function () { window.setTimeout(document.querySelector('svg').classList.add('animated'), 1000); })</script>

@@ -1,14 +1,146 @@
+.c-card__body {
+    font-family: 'Inter', sans-serif;
+    background: #E5E5E5;
+    width: 350px;
+    height: 933px;
+}
+
 .container-header {
     position: absolute;
-    left: 4.27%;
-    right: 87.2%;
-    top: 25%;
-    bottom: 25%;
+    width: 375px;
+    height: 96px;
+    left: 0px;
+    top: 0px;
+
+}
+
+.c-card__input-text {
+
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+
+    position: absolute;
+    width: 343px;
+    height: 48px;
+    left: 16px;
+    top: 152px;
+
+}
+
+.c-card__wait {
+    margin-top: 350px;
+}
+
+.c-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 343px;
+    height: 158px;
+    left: 16px;
+    top: 485px;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
 
 
 }
 
-.c-card__text {
-    font-family: 'Inter', sans-serif;
+.c-buttons__encrypt {
+    gap: 8px;
+    width: 343px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    color: #E5E5E5;
+
+}
+
+.c-buttons__decrypt {
+    box-sizing: border-box;
+    gap: 8px;
+    width: 343px;
+    height: 67px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+
+}
+
+.c-card__mensage {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 32px;
+    position: absolute;
+    left: 24px;
+    top: 707px;
+
+    /* White */
+
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.c-card__mensagem-text1 {
+    width: 263px;
+    height: 58px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    /* or 29px */
+
+    text-align: center;
+
+    /* Gray/gray-500 */
+
+    color: #343A40;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.c-card__mensagem-text2 {
+    width: 263px;
+    height: 48px;
+
+    font-family: 'Inter';
+    font-style: normal;
     font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+
+    text-align: center;
+
+    /* Gray/gray-400 */
+
+    color: #495057;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
 }
