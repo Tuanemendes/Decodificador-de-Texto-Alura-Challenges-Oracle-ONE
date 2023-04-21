@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/assest/css/style.css">
 
     <title>Decodificador</title>
 </head>
@@ -21,26 +21,40 @@
     <header class="c-header__image">
         <img src="/img/Header.png" alt="alura">
     </header>
-    <section>
-        <div class="c-card">
-            <input class="c-card__input-text" type="text" placeholder="Digite seu texto">
-        </div>
-        <div>
-            <p class="c-card__wait">Apenas letras minúsculas e sem acento.</p>
-        </div>
-        <div class="c-buttons">
-            <button class="c-buttons__encrypt">Criptografar</button>
-            <button class="c-buttons__decrypt">Decriptografar</button>
-        </div>
-        <div class="c-card__mensage">
-            <span class="c-card__mensagem-text1">Nenhuma mensagem encontrada</span>
-            <span class="c-card__mensagem-text2">Digite um texto que você deseja criptografar ou
-                descriptografar.</span>
-        </div>
-    </section>
+    <main>
+        <section class="c-section__input">
+            <textarea class="c-card__input-text" type="text" placeholder="Digite seu texto"></textarea>
+        </section>
 
-    <script
-        type='text/javascript'>document.addEventListener('DOMContentLoaded', function () { window.setTimeout(document.querySelector('svg').classList.add('animated'), 1000); })</script>
+        <section class="c-section__output">
+            <div class="c-card__buttons">
+                <p class="c-card__wait"><b>!</b>Apenas letras minúsculas e sem acento.</p>
+                <button class="c-buttons__encrypt">Criptografar</button>
+                <button class="c-buttons__decrypt">Decriptografar</button>
+            </div>
+            <div class="c-card__mensagem">
+                <p class="c-card__mensagem-text1">Nenhuma mensagem encontrada</p>
+                <p class="c-card__mensagem-text2">Digite um texto que você deseja criptografar ou
+                    descriptografar.</p>
+            </div>
+        </section>
+        <footer class="c-footer">
+            <p class="copyright"> &copy; Copyright Decoder Tuane Mendes - 2023</p>
+
+            <a href="https://www.linkedin.com/in/tuane-mendes/" target="blank">
+                <img class='c-footer_icon'
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                    alt="Linkedin" />
+            </a>
+            <br>
+            <a href="https://github.com/Tuanemendes" target="blank">
+                <img class='c-footer_icon'
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
+                    alt="Github" />
+            </a>
+        </footer>
+    </main>
+    <script src="js/main.js"></script>
 
 </body>
 
