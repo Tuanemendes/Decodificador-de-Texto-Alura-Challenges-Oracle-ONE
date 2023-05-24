@@ -3,154 +3,289 @@
     --light-blue-100: #F3F5FC;
     --gray-400: #495057;
     --gray-500: #343A40;
-
+    --light-blue-200: #EFF1FA;
+    --dark-blue-100: #609ED4;
+    --dark-blue-400: #072B61;
+    --dark-blue-500: #052051;
 }
 
 * {
     font-family: 'Inter', sans-serif;
+
 }
 
-.c-card__body {
+body {
     background: var(--light-blue-100);
-    width: 350px;
-    height: 933px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.c-header__logo {
+    margin-left: 10px;
+    padding: 10px;
 
 }
 
-.c-header__image {
-    position: absolute;
-    width: 375px;
-    height: 96px;
-    left: 0px;
-    top: 0px;
+main {
+    display: flex;
+    flex-direction: row;
+    padding: 0 2rem 0 2rem;
 
 }
 
-.c-section__input {}
+.c-section__input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 4rem;
+    padding-top: 4rem;
+}
 
-.c-card__input-text {
-
+.c-textarea__input {
+    width: 30rem;
+    height: 12rem;
+    border: none;
+    padding: 1rem;
+    color: var(--dark-blue-300);
+    text-transform: lowercase;
     font-weight: 400;
     font-size: 32px;
-    line-height: 150%;
+    outline: var(--dark-blue-300);
+    overflow: hidden;
+    resize: none;
+    background: var(--light-blue-100);
+}
+
+.c-wait__icon {
+    content: url('https://api.iconify.design/bi/exclamation-circle-fill.svg');
+    color: var(--gray-500);
+    width: 16px;
+
+}
+
+.c-wait {
+    color: var(--gray-500);
+    font-size: 14px;
+    margin-top: 1rem;
+}
+
+.c-btns__decoder {
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.c-btn__encrypt,
+.c-btn__decrypt {
+    width: 20rem;
+    height: 3rem;
+    border-radius: 1.3rem;
+    cursor: pointer;
+    margin: 12px;
+    font-size: 14px;
+}
+
+.c-btn__encrypt {
+    background: var(--dark-blue-300);
+    color: var(--light-blue-100);
+    border: none;
+}
+
+.c-btn__encrypt:hover {
+    background: var(--dark-blue-400);
+    transform: scale(1.0);
+}
+
+.c-btn__decrypt {
+    background: var(--light-blue-100);
+    box-sizing: border-box;
+    border: 1px solid var(--dark-blue-300);
     color: var(--dark-blue-300);
+}
 
-    position: absolute;
-    width: 343px;
-    height: 48px;
-    left: 16px;
-    top: 152px;
-
+.c-btn__decrypt:hover {
+    background: var(--light-blue-200);
+    transform: scale(1.0);
 }
 
 .c-section__output {}
 
-.c-buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 24px;
-
-    position: absolute;
-    width: 343px;
-    height: 158px;
-    left: 16px;
-    top: 485px;
-
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-
+.c-textarea__output {
+    width: 250px;
+    height: 400px;
+    background: white;
+    background-image: url(../img/pesquisa.png);
+    background-size: 90% 90%;
+    background-repeat: no-repeat;
+    border-radius: 32px;
+    color: var(--dark-blue-300);
+    resize: none;
+    position: fixed;
 
 }
 
-.c-card__wait {
-    margin-top: 350px;
+.c-textarea__output:focus {
+    outline: none;
 }
 
-.c-buttons__encrypt {
-    gap: 8px;
-    width: 343px;
-    height: 67px;
-    background: var(--dark-blue-300);
-    border-radius: 24px;
-    color: var(--light-blue-100);
-    margin-bottom: 12px;
-
-}
-
-.c-buttons__decrypt {
+.c-btn__copy-text {
     background: var(--light-blue-100);
     box-sizing: border-box;
-    gap: 8px;
-    width: 343px;
-    height: 67px;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 1rem;
     border: 1px solid var(--dark-blue-300);
     border-radius: 24px;
     color: var(--dark-blue-300);
-    margin-bottom: 12px;
 
 }
 
-.c-card__mensage {
+.c-footer {
+    background: var(--dark-blue-300);
+    color: var(--light-blue-100);
+    font-size: 13px;
 
+}
+
+
+.c-footer_icon {
+    margin: 8px;
+    width: 24px;
+
+}
+
+/* 
+
+
+.c-textarea__input {
+    font-weight: 400;
+    font-size: 32px;
+    color: var(--dark-blue-300);
+    background: transparent;
+    border: none;
+    outline: var(--dark-blue-300);
+    overflow: hidden;
+    resize: none;
+    height: 10em;
+    width: 15em;
+    padding-left: 4em;
+
+}
+
+.c-textarea__input::placeholder {
+    color: var(--dark-blue-300);
+}
+
+.c-wait {
+    color: var(--gray-500);
+}
+
+.c-wait__icon {
+    content: url('https://api.iconify.design/bi/exclamation-circle-fill.svg');
+    color: var(--gray-500);
+}
+
+.c-btns__decoder {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 32px;
-    gap: 32px;
-    position: absolute;
-    left: 24px;
-    top: 707px;
-    background: #FFFFFF;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 32px;
+    align-items: flex-end;
+    padding: 10px;
 }
 
-.c-card__mensagem-text1 {
-    width: 263px;
-    height: 58px;
+.c-btn__encrypt,
+.c-btn__decrypt {
+    width: 343px;
+    height: 67px;
+    border-radius: 24px;
+    cursor: pointer;
+    margin: 12px;
+}
+
+.c-btn__encrypt {
+    background: var(--dark-blue-300);
+    color: var(--light-blue-100);
+    border: none;
+}
+
+.c-btn__encrypt:hover {
+    background: var(--dark-blue-400);
+    transform: scale(1.0);
+}
+
+.c-btn__decrypt {
+    background: var(--light-blue-100);
+    box-sizing: border-box;
+    border: 1px solid var(--dark-blue-300);
+    color: var(--dark-blue-300);
+}
+
+.c-btn__decrypt:hover {
+    background: var(--light-blue-200);
+    transform: scale(1.0);
+}
+
+
+
+.c-mensage-image {}
+
+.c-mensage-text1 {
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 120%;
     text-align: center;
     color: var(--gray-500);
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
+    margin-bottom: 20px;
 }
 
-.c-card__mensagem-text2 {
-    width: 263px;
-    height: 48px;
+.c-mensage-text2 {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
     text-align: center;
     color: var(--gray-400);
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
 }
 
-.c-card__footer {
-    display: flex;
+.c-text__copy {}
 
+.c-btn__copy-text {
+    background: var(--light-blue-100);
+    box-sizing: border-box;
+    width: 343px;
+    height: 67px;
+    border: 1px solid var(--dark-blue-300);
+    border-radius: 24px;
+    color: var(--dark-blue-300);
+    margin: 12px 0 50px 0;
+}
+
+.c-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--dark-blue-300);
+    color: var(--light-blue-100);
+    font-size: 13px;
+    padding: 20px;
+}
+
+.c-footer__icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px;
 }
 
 .c-footer_icon {
-    width: 40px;
-    height: 40px;
-}
+    margin: 5px;
+    width: 32px;
+    height: 32px;
+} */
 
 /* 
 ideia da letra a piscado e escrever alura e oracle 
 colocar as rede socias 
+nome decoderX
 
 */
