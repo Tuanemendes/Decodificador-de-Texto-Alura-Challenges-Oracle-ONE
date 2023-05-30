@@ -1,44 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assest/css/reset.css">
+    <link rel="stylesheet" href="/assest/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
-    <title>Decodificador</title>
+
+    <title>DecoderX</title>
 </head>
 
 <body>
 
-    <header class="c-header__image">
-        <img src="/img/Header.png" alt="alura">
+    <header class="c-header__logo">
+        <img src="/assest/img/Header.png" alt="alura">
     </header>
-    <section>
-        <div class="c-card">
-            <h2 class="c-card__text">Digite seu texto</h2>
-        </div>
-        <div class="c-buttons">
-            <button class="c-buttons__encrypt">Criptografar</button>
-            <button class="c-buttons__decrypt">Decriptografar</button>
-        </div>
-    </section>
-    <footer class="container-footer">
+    <main>
+        <section class="c-section__input c-section__input--responsive">
+            <textarea id="input-text" class="c-textarea__input" type="text" placeholder="Digite seu texto"></textarea>
 
-        @Tuane Mendes
 
+            <p class="c-wait"><span class="c-wait__icon"></span> Apenas letras
+                minúsculas e sem acento.</p>
+            <div class="c-btns__decoder">
+                <button class="c-btn__encrypt" encryptText()>Criptografar</button>
+                <button class="c-btn__decrypt" decryptText()>Decriptografar</button>
+                <button id="btn-clear" class="c-btn__clear" clearText()>Limpar</button>
+            </div>
+        </section>
+        <section class="c-section__output c-section__output--responsive">
+            <textarea id="output-text" class="c-textarea__output c-textarea__output--responsive"></textarea>
+            <button class="c-btn__copy-text" id="btn-copy-text" copyText()>Copiar</button>
+            <p class="c-mensage-text1" id="messagem1">Nenhuma mensagem encontrada</p>
+            <p class="c-mensage-text2" id="messagem2">Digite um texto que você deseja criptografar ou
+                descriptografar.</p>
+            <!-- <span class="c-text__copy" id="text-copy">Texto copiado</span> -->
+        </section>
+    </main>
+    <footer class="c-footer">
+        <div class="c-container-footer">
+            <p class="copyright"> &copy; Copyright DecoderX Tuane Mendes - 2023</p>
+
+            <a href="https://www.linkedin.com/in/tuane-mendes/" target="blank">
+                <img class='c-footer_icon'
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                    alt="Linkedin" />
+            </a>
+            <br>
+            <a href="https://github.com/Tuanemendes" target="blank">
+                <img class='c-footer_icon'
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
+                    alt="Github" />
+            </a>
+        </div>
     </footer>
-
-
-    <script
-        type='text/javascript'>document.addEventListener('DOMContentLoaded', function () { window.setTimeout(document.querySelector('svg').classList.add('animated'), 1000); })</script>
+    <script src="js/main.js"></script>
 
 </body>
 

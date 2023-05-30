@@ -1,0 +1,420 @@
+:root {
+    --dark-blue-300: #0A3871;
+    --light-blue-100: #F3F5FC;
+    --gray-400: #495057;
+    --gray-500: #343A40;
+    --light-blue-200: #EFF1FA;
+    --dark-blue-100: #609ED4;
+    --dark-blue-400: #072B61;
+    --dark-blue-500: #052051;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+
+}
+
+html {
+
+    height: 100vh;
+
+}
+
+body {
+    background: var(--light-blue-100);
+    overflow: hidden;
+}
+
+.c-header__logo {
+    width: 50%;
+    padding-left: 10px;
+    position: relative;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    padding: 0 2rem 0 2rem;
+    position: absolute;
+    top: 0;
+    margin: 50px;
+    ;
+
+}
+
+.c-section__input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 4rem;
+    padding-top: 4rem;
+
+
+}
+
+.c-textarea__input {
+    width: 30rem;
+    height: 18rem;
+    border: none;
+    color: var(--dark-blue-300);
+    text-transform: lowercase;
+    font-weight: 400;
+    font-size: 32px;
+    outline: var(--dark-blue-300);
+    overflow: hidden;
+    resize: none;
+    background: var(--light-blue-100);
+}
+
+.c-wait__icon {
+    content: url('https://api.iconify.design/bi/exclamation-circle-fill.svg');
+    color: var(--gray-500);
+    width: 16px;
+}
+
+.c-wait {
+    color: var(--gray-500);
+    font-size: 14px;
+    margin-top: 1rem;
+    margin-right: 300px;
+    padding-top: 80px;
+}
+
+.c-btns__decoder {
+    display: flex;
+    align-items: flex-end;
+
+
+}
+
+.c-btn__encrypt,
+.c-btn__decrypt,
+.c-btn__clear {
+    width: 11rem;
+    height: 3rem;
+    border-radius: 1.3rem;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.c-btn__encrypt {
+    background: var(--dark-blue-300);
+    color: var(--light-blue-100);
+    border: none;
+}
+
+.c-btn__encrypt:hover {
+    background: var(--dark-blue-400);
+    transform: scale(1.0);
+}
+
+.c-btn__decrypt {
+    background: var(--light-blue-100);
+    box-sizing: border-box;
+    border: 1px solid var(--dark-blue-300);
+    color: var(--dark-blue-300);
+}
+
+.c-btn__decrypt:hover {
+    background: var(--light-blue-200);
+    transform: scale(1.0);
+}
+
+
+.c-btn__clear {
+    background: var(--light-blue-100);
+    box-sizing: border-box;
+    border: 1px solid var(--dark-blue-300);
+    color: var(--dark-blue-300);
+}
+
+.-c-btn__clear:hover {
+    background: var(--light-blue-200);
+    transform: scale(1.0);
+}
+
+.c-section__output {
+    display: flex;
+    flex-direction: column;
+}
+
+.c-textarea__output {
+    width: 300px;
+    height: 470px;
+    background: white;
+    background-image: url(../img/pesquisa.png);
+    background-size: 90% 60%;
+    background-repeat: no-repeat;
+    border-radius: 32px;
+    color: var(--dark-blue-300);
+    resize: none;
+    position: fixed;
+    padding: 30px;
+    font-size: 32px;
+    margin-left: 2em;
+    margin-bottom: 15em;
+}
+
+.c-textarea__output:focus {
+    outline: none;
+}
+
+.c-mensage-text1 {
+    width: 336px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    position: fixed;
+    color: var(--gray-500);
+    text-align: center;
+    margin: 360px 0px 0px 80px;
+    /* padding: 25px; */
+}
+
+.c-mensage-text2 {
+    width: 336px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--gray-400);
+    position: fixed;
+    text-align: center;
+    margin: 430px 0px 0px 70px;
+    /* padding: 30px; */
+}
+
+.c-btn__copy-text {
+    background: var(--light-blue-100);
+    box-sizing: border-box;
+    width: 19rem;
+    height: 3rem;
+    border-radius: 1rem;
+    border: 1px solid var(--dark-blue-300);
+    border-radius: 24px;
+    color: var(--dark-blue-300);
+    z-index: 9999;
+    margin-left: 7em;
+    margin-top: 28rem;
+    display: none;
+
+}
+
+.c-footer {
+    background: var(--dark-blue-300);
+    color: var(--light-blue-100);
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+}
+
+.c-container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
+.c-footer_icon {
+    margin: 8px;
+    width: 24px;
+}
+
+@media screen and (max-width: 1220px) and (max-height: 909px) {
+    .c-wait {
+        margin-right: 300px;
+        padding-top: 300px;
+    }
+
+    .c-textarea__output {
+        height: 700px;
+        background-size: 90% 40%;
+    }
+
+    .c-mensage-text1 {
+        margin: 450px 0px 0px 80px;
+    }
+
+    .c-mensage-text2 {
+        margin: 530px 0px 0px 70px;
+    }
+
+    .c-btn__copy-text {
+        margin-top: 42rem;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .c-section__input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 1rem;
+        padding-top: 6rem;
+    }
+
+    .c-section__output--responsive {
+        position: relative;
+    }
+
+    .c-textarea__output {
+        width: 600px;
+        height: 180px;
+        position: absolute;
+        top: 0;
+        margin-top: 600px;
+        margin-left: -600px;
+        background-image: none;
+        padding: 15px;
+        margin-bottom: 0;
+    }
+
+    .c-btn__encrypt,
+    .c-btn__decrypt,
+    .c-btn__clear {
+        margin-bottom: 100rem;
+
+    }
+
+    .c-mensage-text1 {
+        width: 500px;
+        position: relative;
+        margin: 660px 0px 0px 80px;
+        margin-left: -535px;
+        /* padding: 25px; */
+    }
+
+    .c-mensage-text2 {
+        width: 500px;
+        position: relative;
+        margin: 30px 0px 0px 70px;
+        margin-left: -535px;
+    }
+
+    .c-btn__copy-text {
+        width: 15rem;
+        margin-left: -400px;
+        margin-top: 850px;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    body {
+        overflow: scroll;
+        height: 990px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px 0 10px;
+        margin: 5px;
+        position: relative;
+        top: 0;
+    }
+
+    .c-section__input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0rem;
+        padding-top: 0rem;
+    }
+
+
+    .c-textarea__input {
+        width: 20rem;
+        height: 14rem;
+        font-weight: 400;
+        font-size: 20px;
+
+    }
+
+    .c-wait {
+        width: 300px;
+        font-size: 10px;
+        margin-top: 0;
+        margin-right: 10px;
+        padding-top: 5px;
+    }
+
+    .c-btns__decoder {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .c-btn__encrypt,
+    .c-btn__decrypt,
+    .c-btn__clear {
+        width: 18rem;
+        height: 2.5rem;
+        margin-bottom: 0rem;
+    }
+
+    .c-textarea__output {
+        width: 325px;
+        height: 190px;
+        position: relative;
+        top: 0;
+        margin-top: 10px;
+        margin-left: 0px;
+        background-image: none;
+        padding: 10px;
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+    .c-mensage-text1 {
+        width: 280px;
+        position: absolute;
+        margin: 50px 0px 0px 0px;
+        margin-left: 0px;
+        font-size: 18px;
+        padding-left: 30px;
+    }
+
+    .c-mensage-text2 {
+        width: 280px;
+        position: absolute;
+        margin: 100px 0px 0px 0px;
+        margin-left: 0px;
+        font-size: 16px;
+        padding-left: 30px;
+    }
+
+    .c-btn__copy-text {
+        width: 18rem;
+        height: 2.5rem;
+        margin-left: 30px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      
+    }
+    .c-footer {
+        font-size: 12px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+        left: 0;
+        right: 0;
+        z-index: 999;
+       
+    }
+
+}
