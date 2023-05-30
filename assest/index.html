@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -22,29 +22,30 @@
     </header>
     <main>
         <section class="c-section__input">
-            <textarea class="c-textarea__input" type="text" placeholder="Digite seu texto"></textarea>
+            <textarea id="input-text" class="c-textarea__input" type="text" placeholder="Digite seu texto"></textarea>
 
 
             <p class="c-wait"><span class="c-wait__icon"></span> Apenas letras
                 minúsculas e sem acento.</p>
             <div class="c-btns__decoder">
-                <button class="c-btn__encrypt">Criptografar</button>
-                <button class="c-btn__decrypt">Decriptografar</button>
+                <button class="c-btn__encrypt" encryptText()>Criptografar</button>
+                <button class="c-btn__decrypt" decryptText()>Decriptografar</button>
+                <button id="btn-clear" class="c-btn__clear" clearText()>Limpar</button>
             </div>
         </section>
         <section class="c-section__output">
-            <textarea class="c-textarea__output"></textarea>
-            <button class="c-btn__copy-text" id="btn-copy-text">Copiar</button>
-            <!-- <img class="c-mensage-image" src="/assest/img/High quality products 1 1.png" alt="Procura mensagem">
-                <p class="c-mensage-text1">Nenhuma mensagem encontrada</p>
-                <p class="c-mensage-text2">Digite um texto que você deseja criptografar ou
-                    descriptografar.</p> -->
+            <textarea id="output-text" class="c-textarea__output"></textarea>
+            <button class="c-btn__copy-text" id="btn-copy-text" copyText()>Copiar</button>
+            <p class="c-mensage-text1" id="messagem1">Nenhuma mensagem encontrada</p>
+            <p class="c-mensage-text2" id="messagem2">Digite um texto que você deseja criptografar ou
+                descriptografar.</p>
             <!-- <span class="c-text__copy" id="text-copy">Texto copiado</span> -->
         </section>
     </main>
     <footer class="c-footer">
-        <p class="copyright"> &copy; Copyright DecoderX Tuane Mendes - 2023</p>
-        
+        <div class="c-container-footer">
+            <p class="copyright"> &copy; Copyright DecoderX Tuane Mendes - 2023</p>
+
             <a href="https://www.linkedin.com/in/tuane-mendes/" target="blank">
                 <img class='c-footer_icon'
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
@@ -56,7 +57,7 @@
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
                     alt="Github" />
             </a>
-        
+        </div>
     </footer>
     <script src="js/main.js"></script>
 

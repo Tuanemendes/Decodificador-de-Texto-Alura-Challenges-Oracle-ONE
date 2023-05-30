@@ -14,23 +14,30 @@
 
 }
 
+html {
+    height: 100vh;
+
+}
+
 body {
     background: var(--light-blue-100);
     overflow: hidden;
-    width: 100%;
-    height: 100%;
 }
 
 .c-header__logo {
-    margin-left: 10px;
-    padding: 10px;
-
+    width: 50%;
+    padding-left: 10px;
+    position: relative;
 }
 
 main {
     display: flex;
     flex-direction: row;
     padding: 0 2rem 0 2rem;
+    position: absolute;
+    top: 0;
+    margin: 50px;
+    ;
 
 }
 
@@ -41,13 +48,14 @@ main {
     justify-content: center;
     padding-left: 4rem;
     padding-top: 4rem;
+
+
 }
 
 .c-textarea__input {
     width: 30rem;
-    height: 12rem;
+    height: 18rem;
     border: none;
-    padding: 1rem;
     color: var(--dark-blue-300);
     text-transform: lowercase;
     font-weight: 400;
@@ -62,29 +70,32 @@ main {
     content: url('https://api.iconify.design/bi/exclamation-circle-fill.svg');
     color: var(--gray-500);
     width: 16px;
-
 }
 
 .c-wait {
     color: var(--gray-500);
     font-size: 14px;
     margin-top: 1rem;
+    margin-right: 300px;
+    padding-top: 80px;
 }
 
 .c-btns__decoder {
     display: flex;
     align-items: flex-end;
-    padding: 10px;
+
+
 }
 
 .c-btn__encrypt,
-.c-btn__decrypt {
-    width: 20rem;
+.c-btn__decrypt,
+.c-btn__clear {
+    width: 11rem;
     height: 3rem;
     border-radius: 1.3rem;
     cursor: pointer;
-    margin: 12px;
-    font-size: 14px;
+    margin: 10px;
+    font-size: 16px;
 }
 
 .c-btn__encrypt {
@@ -110,182 +121,111 @@ main {
     transform: scale(1.0);
 }
 
-.c-section__output {}
+
+.c-btn__clear {
+    background: var(--light-blue-100);
+    box-sizing: border-box;
+    border: 1px solid var(--dark-blue-300);
+    color: var(--dark-blue-300);
+}
+
+.-c-btn__clear:hover {
+    background: var(--light-blue-200);
+    transform: scale(1.0);
+}
+
+.c-section__output {
+    display: flex;
+    flex-direction: column;
+}
 
 .c-textarea__output {
-    width: 250px;
-    height: 400px;
+    width: 300px;
+    height: 470px;
     background: white;
     background-image: url(../img/pesquisa.png);
-    background-size: 90% 90%;
+    background-size: 90% 60%;
     background-repeat: no-repeat;
     border-radius: 32px;
     color: var(--dark-blue-300);
     resize: none;
     position: fixed;
-
+    padding: 30px;
+    font-size: 32px;
+    margin-left: 2em;
+    margin-bottom: 15em;
 }
 
 .c-textarea__output:focus {
     outline: none;
 }
 
+.c-mensage-text1 {
+    width: 336px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    position: fixed;
+    color: var(--gray-500);
+    text-align: center;
+    margin: 300px 0px 0px 80px;
+    /* padding: 25px; */
+}
+
+.c-mensage-text2 {
+    width: 336px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--gray-400);
+    position: fixed;
+    text-align: center;
+    margin: 370px 0px 0px 70px;
+    /* padding: 30px; */
+}
+
 .c-btn__copy-text {
     background: var(--light-blue-100);
     box-sizing: border-box;
-    width: 10rem;
-    height: 2rem;
+    width: 18rem;
+    height: 3rem;
     border-radius: 1rem;
     border: 1px solid var(--dark-blue-300);
     border-radius: 24px;
     color: var(--dark-blue-300);
+    z-index: 9999;
+    margin-left: 7em;
+    margin-top: 28rem;
+    /* display: none; */
 
 }
 
 .c-footer {
     background: var(--dark-blue-300);
     color: var(--light-blue-100);
-    font-size: 13px;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 999;
 
 }
 
+.c-container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
 
 .c-footer_icon {
     margin: 8px;
     width: 24px;
-
 }
-
-/* 
-
-
-.c-textarea__input {
-    font-weight: 400;
-    font-size: 32px;
-    color: var(--dark-blue-300);
-    background: transparent;
-    border: none;
-    outline: var(--dark-blue-300);
-    overflow: hidden;
-    resize: none;
-    height: 10em;
-    width: 15em;
-    padding-left: 4em;
-
-}
-
-.c-textarea__input::placeholder {
-    color: var(--dark-blue-300);
-}
-
-.c-wait {
-    color: var(--gray-500);
-}
-
-.c-wait__icon {
-    content: url('https://api.iconify.design/bi/exclamation-circle-fill.svg');
-    color: var(--gray-500);
-}
-
-.c-btns__decoder {
-    display: flex;
-    align-items: flex-end;
-    padding: 10px;
-}
-
-.c-btn__encrypt,
-.c-btn__decrypt {
-    width: 343px;
-    height: 67px;
-    border-radius: 24px;
-    cursor: pointer;
-    margin: 12px;
-}
-
-.c-btn__encrypt {
-    background: var(--dark-blue-300);
-    color: var(--light-blue-100);
-    border: none;
-}
-
-.c-btn__encrypt:hover {
-    background: var(--dark-blue-400);
-    transform: scale(1.0);
-}
-
-.c-btn__decrypt {
-    background: var(--light-blue-100);
-    box-sizing: border-box;
-    border: 1px solid var(--dark-blue-300);
-    color: var(--dark-blue-300);
-}
-
-.c-btn__decrypt:hover {
-    background: var(--light-blue-200);
-    transform: scale(1.0);
-}
-
-
-
-.c-mensage-image {}
-
-.c-mensage-text1 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 120%;
-    text-align: center;
-    color: var(--gray-500);
-    margin-bottom: 20px;
-}
-
-.c-mensage-text2 {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    text-align: center;
-    color: var(--gray-400);
-}
-
-.c-text__copy {}
-
-.c-btn__copy-text {
-    background: var(--light-blue-100);
-    box-sizing: border-box;
-    width: 343px;
-    height: 67px;
-    border: 1px solid var(--dark-blue-300);
-    border-radius: 24px;
-    color: var(--dark-blue-300);
-    margin: 12px 0 50px 0;
-}
-
-.c-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--dark-blue-300);
-    color: var(--light-blue-100);
-    font-size: 13px;
-    padding: 20px;
-}
-
-.c-footer__icons {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 15px;
-}
-
-.c-footer_icon {
-    margin: 5px;
-    width: 32px;
-    height: 32px;
-} */
-
-/* 
-ideia da letra a piscado e escrever alura e oracle 
-colocar as rede socias 
-nome decoderX
-
-*/
