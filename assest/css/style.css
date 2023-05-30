@@ -11,7 +11,6 @@
 
 * {
     font-family: 'Inter', sans-serif;
-
 }
 
 html {
@@ -38,8 +37,6 @@ main {
     position: absolute;
     top: 0;
     margin: 50px;
-    ;
-
 }
 
 .c-section__input {
@@ -49,8 +46,6 @@ main {
     justify-content: center;
     padding-left: 4rem;
     padding-top: 4rem;
-
-
 }
 
 .c-textarea__input {
@@ -84,8 +79,6 @@ main {
 .c-btns__decoder {
     display: flex;
     align-items: flex-end;
-
-
 }
 
 .c-btn__encrypt,
@@ -170,7 +163,6 @@ main {
     color: var(--gray-500);
     text-align: center;
     margin: 360px 0px 0px 80px;
-    /* padding: 25px; */
 }
 
 .c-mensage-text2 {
@@ -182,7 +174,6 @@ main {
     position: fixed;
     text-align: center;
     margin: 430px 0px 0px 70px;
-    /* padding: 30px; */
 }
 
 .c-btn__copy-text {
@@ -197,8 +188,6 @@ main {
     z-index: 9999;
     margin-left: 7em;
     margin-top: 28rem;
-    display: none;
-
 }
 
 .c-footer {
@@ -213,7 +202,6 @@ main {
     left: 0;
     right: 0;
     z-index: 999;
-
 }
 
 .c-container-footer {
@@ -223,7 +211,6 @@ main {
     width: 100%;
     height: 100%;
     position: absolute;
-
 }
 
 .c-footer_icon {
@@ -316,7 +303,7 @@ main {
     body {
         overflow: scroll;
         height: 990px;
-    }
+    } 
 
     main {
         display: flex;
@@ -336,13 +323,11 @@ main {
         padding-top: 0rem;
     }
 
-
     .c-textarea__input {
         width: 20rem;
         height: 14rem;
         font-weight: 400;
         font-size: 20px;
-
     }
 
     .c-wait {
@@ -414,7 +399,5 @@ main {
         left: 0;
         right: 0;
         z-index: 999;
-       
     }
-
 }
