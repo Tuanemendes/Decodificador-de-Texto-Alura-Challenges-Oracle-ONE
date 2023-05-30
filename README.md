@@ -48,12 +48,30 @@ Um decodificador de textos é um programa ou dispositivo que ajuda a decifrar c�
 <h2>💻Informações do Projeto</h2>
 
 <p>
-
-
-    
+Tela inicial com os campos para digitar o texto, foi adicionado alem do projeto proposto um botão para limpar e recarrecar a página
+   
 </p>
-
-
+<div  align="center">
+    <img src="https://github.com/Tuanemendes/Decodificador-de-Texto-Alura-Challenges-Oracle-ONE/assets/54903202/8cc33890-29ef-47ff-bfe2-71e618387cf6" width="500" height="300" alt="tela do decodeX"/>
+ </div>
+<p>
+  Foi passsado um desafio de menssagem secreta para realizar os testes de descriptografia 
+ </p>
+ 
+ ```
+ pairaibenterns poberr enterncairair enterssenter dentersaifimesober enter tenterr fimesnailimeszaidober enterlenter coberm sufatcenterssober!
+ 
+ ```
+ <div  align="center">
+    <img src="https://github.com/Tuanemendes/Decodificador-de-Texto-Alura-Challenges-Oracle-ONE/assets/54903202/fa1345c0-c378-4a18-adce-5d369af51733" width="500" height="300" alt="tela do decodeX"/>
+ </div>
+ <p>
+   No botão de copiar é gerado um  pop-up  com a informação de "Texto copiado!"
+ </p>
+ 
+ <div  align="center">
+    <img src="https://github.com/Tuanemendes/Decodificador-de-Texto-Alura-Challenges-Oracle-ONE/assets/54903202/7941cb89-4401-4d69-a968-64943e36a717" width="500" height="300" alt="tela do decodeX"/>
+ </div>
 
 <h2>🛠Desenvolvido Por</h2>
 
