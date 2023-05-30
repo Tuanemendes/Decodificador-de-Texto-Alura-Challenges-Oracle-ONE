@@ -23,8 +23,8 @@ function encryptText() {
 
     document.getElementById('output-text').value = encryptedText;
     document.getElementById('output-text').style.backgroundImage = 'none';
-    document.getElementById('messagem1').innerHTML = '';
-    document.getElementById('messagem2').innerHTML = '';
+    document.getElementById('messagem1').textContent = '';
+    document.getElementById('messagem2').textContent = '';
     if (encryptedText !== '') {
         document.getElementById('btn-copy-text').style.display = 'block';
     }
@@ -43,6 +43,8 @@ function decryptText() {
     document.getElementById('output-text').value = decryptedText;
 
     document.getElementById('output-text').style.backgroundImage = 'none';
+    document.getElementById('messagem1').textContent = '';
+    document.getElementById('messagem2').textContent = '';
 }
 
 function isEncrypted(text) {
@@ -67,11 +69,10 @@ function clearText() {
     location.reload();
 }
 
-
-document.getElementById('btn-clear').addEventListener('click', clearText);
-
-document.getElementById('btn-copy-text').addEventListener('click', copyText);
-
 document.querySelector('.c-btn__encrypt').addEventListener('click', encryptText);
 
 document.querySelector('.c-btn__decrypt').addEventListener('click', decryptText);
+
+document.getElementById('btn-copy-text').addEventListener('click', copyText);
+
+document.getElementById('btn-clear').addEventListener('click', clearText);
