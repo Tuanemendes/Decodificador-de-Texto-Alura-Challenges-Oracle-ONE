@@ -11,12 +11,12 @@
 
 * {
     font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-
     height: 100vh;
-
 }
 
 body {
@@ -137,7 +137,7 @@ main {
     width: 300px;
     height: 470px;
     background: white;
-    background-image: url(../img/pesquisa.png);
+    background-image: url(/img/pesquisa.png);
     background-size: 90% 60%;
     background-repeat: no-repeat;
     border-radius: 32px;
@@ -303,7 +303,7 @@ main {
     body {
         overflow: scroll;
         height: 990px;
-    } 
+    }
 
     main {
         display: flex;
@@ -340,7 +340,7 @@ main {
 
     .c-btns__decoder {
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
     }
 
     .c-btn__encrypt,
@@ -388,8 +388,9 @@ main {
         margin-left: 30px;
         margin-top: 20px;
         margin-bottom: 10px;
-      
+
     }
+
     .c-footer {
         font-size: 12px;
         position: fixed;
